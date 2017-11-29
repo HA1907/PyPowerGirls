@@ -14,9 +14,7 @@ def say_hello_with_name(name):
 
 @app.route("/hello/<name>")
 def say_hello_the_old_way_with_name(name):
-	return render_template ("index.html", name=name)
-
-@app.route("another.html")	
+	return render_template ("index.html", name=name)	
 
 If 'PORT' in os.environ:
 	app.run(host='0.0.0.0', port=int(os.environ['PORT']))
