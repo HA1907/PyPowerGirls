@@ -16,7 +16,7 @@ def say_hello_with_name(name):
 def say_hello_the_old_way_with_name(name):
 	return render_template ("index.html", name=name)	
 
-If 'PORT' in os.environ:
+if 'PORT' in os.environ:
 	app.run(host='0.0.0.0', port=int(os.environ['PORT']))
 else:
 	app.run(debug=True)
