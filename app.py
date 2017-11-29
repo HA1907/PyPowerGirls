@@ -18,7 +18,7 @@ def say_hello_the_old_way_with_name(name):
 
 @app.route("another.html")	
 
-if 'PORT' in os.environ:
+If 'PORT' in os.environ:
 	app.run(host='0.0.0.0', port=int(os.environ['PORT']))
 else:
 	app.run(debug=True)
